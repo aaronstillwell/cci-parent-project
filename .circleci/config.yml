@@ -1,0 +1,13 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/base:current
+    steps:
+      - run: 'hello world'
+
+workflows:
+  build:
+    jobs:
+      - build
