@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: cimg/base:current
     steps:
-      - run: 'hello world'
+      - run: echo 'hello world'
 
 workflows:
   build:
